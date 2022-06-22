@@ -1,0 +1,1 @@
+about pyhton exceptions
