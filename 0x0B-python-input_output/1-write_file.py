@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""Contains a function that write to file"""
+'''
+Module to write to file
+'''
 
 
 def write_file(filename="", text=""):
-    """
-        Writes the content `text` to a file specified
-    """
-    with open(filename, mode="w", encoding="utf-8") as f:
-        return f.write(text
+    ''' Writes text to file '''
+    with open(filename, 'w') as open_file:
+        open_file.write(text)
+        count = open_file.tell()
+    return count
